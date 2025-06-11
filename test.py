@@ -1,6 +1,6 @@
 import unittest
 from Calculator import Calculator
-from Converter import Converte
+from Converter import Converter
 
 #Test pour déclancher la pipeline lors du pull request
 class TestCalculator(unittest.TestCase):
@@ -35,7 +35,7 @@ class TestCalculator(unittest.TestCase):
     def test_convert_valid(self):
         result = self.converter.convert(100, 'EUR', 'USD')
         self.assertAlmostEqual(result, 118.0, places=2)
-        
+
     def test_convert_invalid_currency(self):
         with self.assertRaises(ValueError):
             self.converter.convert(100, 'EUR', 'XYZ')
