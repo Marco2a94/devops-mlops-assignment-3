@@ -2,16 +2,16 @@ class Calculator:
     def __init__(self):
         print("Calculator object successfuly initialized")
     
-    def add(a, b):
+    def add(self, a, b):
         return a + b
 
-    def subtract(a, b):
+    def subtract(self, a, b):
         return a - b
 
-    def multiply(a, b):
+    def multiply(self, a, b):
         return a * b
 
-    def divide(a, b):
+    def divide(self, a, b):
         if b == 0:
             raise ValueError("Cannot divide by zero")
         return a / b
