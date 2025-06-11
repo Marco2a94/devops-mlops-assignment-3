@@ -1,8 +1,8 @@
 import unittest
-import Calculator
+from Calculator import Calculator
 
 class TestCalculator(unittest.TestCase):
-    def __init__(self):
+    def setUp(self):
         self.calculator = Calculator()
         
     def test_non_existent_method(self):
