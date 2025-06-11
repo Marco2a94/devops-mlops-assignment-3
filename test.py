@@ -1,6 +1,7 @@
 import unittest
 from Calculator import Calculator
 
+#Test pour déclancher la pipeline lors du pull request
 class TestCalculator(unittest.TestCase):
     def setUp(self):
         self.calculator = Calculator()
